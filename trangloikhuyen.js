@@ -211,20 +211,7 @@ let contentSets = [
   },
 ];
 
-function getUrlParameter(string) {
-  string = string.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-  const regex = new RegExp("[\\?&]" + string + "=([^&#]*)");
-  const results = regex.exec(location.search);
-  return results === null
-    ? ""
-    : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-
 const points = getUrlParameter("points").split("-").map(Number);
-
-function hasValidPoints(points) {
-  return points.some((point) => point >= 70);
-}
 
 if (!hasValidPoints(points)) {
   window.location.href = "index.html";
@@ -243,6 +230,10 @@ document.getElementById("arw-right").addEventListener("click", () => {
   updateContent(currentIndex);
 });
 
+document.getElementById("reset-scroll").addEventListener("click", () => {
+    window.scrollTo(0, 0);
+})
+
 function updateContent(index) {
   console.log("Index:", currentIndex);
   const content = contentSets[index];
@@ -250,7 +241,6 @@ function updateContent(index) {
   document.querySelector(".content-text-1").innerHTML = content.nguyennhan;
   document.querySelector(".content-text-2").innerHTML = content.giaiphap;
 }
-
 function getNextIndex(currentIndex) {
   let newIndex = currentIndex;
   do {
@@ -258,11 +248,17 @@ function getNextIndex(currentIndex) {
   } while (points[newIndex] < 70);
   return newIndex;
 }
-
 function getPreviousIndex(currentIndex) {
   let newIndex = currentIndex;
   do {
     newIndex = (newIndex - 1 + contentSets.length) % contentSets.length;
   } while (points[newIndex] < 70);
   return newIndex;
+}
+function getUrlParameter(name) {
+  const urlParams = new URLSearchParams(location.search);
+  return urlParams.get(name) || "";
+}
+function hasValidPoints(points) {
+  return points.some((point) => point >= 70);
 }

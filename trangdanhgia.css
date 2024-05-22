@@ -105,8 +105,8 @@ body {
 }
 
 .next-button-content {
-  top: 8px;
-  left: 47.5px;
+  width: 100%;
+  padding: 10px 30px;
   position: absolute;
 }
 
@@ -166,7 +166,7 @@ body {
 }
 
 .next-button {
-  width: 310px;
+  width: 300px;
 }
 
 .end-button {

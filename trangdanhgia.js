@@ -96,32 +96,13 @@ function updateContent() {
     }
   });
 
-  const nextPageButton = document.createElement("div");
-  nextPageButton.innerHTML = `
-      <button class="next-button">
-        <span class="next-button-content">mục tiếp theo</span>
-      </button>`;
-  frame.appendChild(nextPageButton);
-  nextPageButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    handleNextPageClick();
-  });
+  createNextButton();
 
-  if (getAnsweredNum(questionSets) === 30) {
-    const endSurveybutton = document.createElement("div");
-    endSurveybutton.innerHTML = `
-      <button class="end-button">
-        <span class="next-button-content">hoàn thành bài đánh giá</span>
-      </button>`;
-    frame.appendChild(endSurveybutton);
-    endSurveybutton.addEventListener("click", (event) => {
-      event.preventDefault();
-      redirectToEndingPage();
-    });
+  if (getAnsweredNum(questionSets) >= 30) {
+    createSubmitButton();
   }
   console.log("Điểm:", points[0], points[1], points[2], points[3]);
 }
-
 function createQuestion(questionText) {
   const questionFrame = document.createElement("div");
   questionFrame.className = "question-frame";
@@ -143,6 +124,30 @@ function createQuestion(questionText) {
   const questionContentSpan = questionFrame.querySelector(".question-content");
   questionContentSpan.classList.add("unselectable");
   return questionFrame;
+}
+function createSubmitButton() {
+  const endSurveybutton = document.createElement("div");
+  endSurveybutton.innerHTML = `
+      <button class="end-button">
+        <span class="next-button-content">hoàn thành bài đánh giá</span>
+      </button>`;
+  frame.appendChild(endSurveybutton);
+  endSurveybutton.addEventListener("click", (event) => {
+    event.preventDefault();
+    redirectToEndingPage();
+  });
+}
+function createNextButton() {
+  const nextPageButton = document.createElement("div");
+  nextPageButton.innerHTML = `
+      <button class="next-button">
+        <span class="next-button-content">mục tiếp theo</span>
+      </button>`;
+  frame.appendChild(nextPageButton);
+  nextPageButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    handleNextPageClick();
+  });
 }
 function handleNextPageClick() {
   setIndex = (setIndex + 1) % questionSets.length;

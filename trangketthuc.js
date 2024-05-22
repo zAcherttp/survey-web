@@ -1,19 +1,5 @@
-function getUrlParameter(string) {
-  string = string.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-  const regex = new RegExp("[\\?&]" + string + "=([^&#]*)");
-  const results = regex.exec(location.search);
-  return results === null
-    ? ""
-    : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-
 const pointsString = getUrlParameter("points");
 const points = pointsString.split("-").map(Number);
-
-function hasValidPoints(points) {
-  return points.some((point) => point >= 70);
-}
-
 const pageContent = document.querySelector(".main-frame-content");
 
 function updateContent() {
@@ -68,6 +54,13 @@ function updateContent() {
       window.location.href = `trangloikhuyen.html?points=${pointsString}`;
     });
   }
+}
+function getUrlParameter(name) {
+  const urlParams = new URLSearchParams(location.search);
+  return urlParams.get(name) || "";
+}
+function hasValidPoints(points) {
+  return points.some((point) => point >= 70);
 }
 
 updateContent();

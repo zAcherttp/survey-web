@@ -137,3 +137,31 @@ button {
 .content-title {
   font-weight: 600;
 }
+
+.button-content {
+  width: 100%;
+  padding: 10px 40px;
+  font-family: "Reddit Sans";
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  height: auto;
+}
+
+.button {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 1;
+  width: auto;
+  height: 70px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 4px 0px #d4d4d4;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ccffcc;
+  box-shadow: 0px 0px 0px 0px #d4d4d4;
+}
