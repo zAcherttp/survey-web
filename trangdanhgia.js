@@ -97,24 +97,22 @@ function updateContent() {
   });
 
   const nextPageButton = document.createElement("div");
-  nextPageButton.className = "next-page";
   nextPageButton.innerHTML = `
       <button class="next-button">
         <span class="next-button-content">mục tiếp theo</span>
-      </button>
-    `;
+      </button>`;
   frame.appendChild(nextPageButton);
   nextPageButton.addEventListener("click", (event) => {
     event.preventDefault();
     handleNextPageClick();
   });
 
-  if (getAnsweredNum(questionSets) === 40) {
+  if (getAnsweredNum(questionSets) === 30) {
     const endSurveybutton = document.createElement("div");
-    endSurveybutton.className = "end-page";
-    endSurveybutton.innerHTML = `<button class="end-button">
-    <span class="next-button-content">hoàn thành bài đánh giá</span>
-    </button>`;
+    endSurveybutton.innerHTML = `
+      <button class="end-button">
+        <span class="next-button-content">hoàn thành bài đánh giá</span>
+      </button>`;
     frame.appendChild(endSurveybutton);
     endSurveybutton.addEventListener("click", (event) => {
       event.preventDefault();
@@ -176,7 +174,8 @@ function handleAnswerClick(questionIndex, answer) {
   questionSets[setIndex].answers[questionIndex] = answer;
 }
 function redirectToEndingPage() {
-  window.location.href = "trangketthuc.html";
+  const pointsString = points.join('-');
+  window.location.href = `trangketthuc.html?points=${pointsString}`;
 }
 function getAnsweredNum(questionSets) {
   let count = 0;

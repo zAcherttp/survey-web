@@ -1,134 +1,126 @@
-.trang-ket-thuc-container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
+html {
+  line-height: 1.15;
+  scroll-behavior: smooth;
 }
-.trang-ket-thuc-trang-ket-qua {
+
+body {
+  margin: 0;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+}
+
+html {
+  line-height: 1.15;
+  scroll-behavior: smooth;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  transition: 0.3s;
+}
+
+.trang-ket-qua {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
   gap: 45px;
   width: 100%;
   height: auto;
-  display: flex;
   padding: 135px 202px;
   overflow: hidden;
-  align-items: flex-start;
-  flex-shrink: 0;
-  flex-direction: column;
-  background-color: rgba(3, 4, 94, 1);
 }
-.trang-ket-thuc-main-frame {
+
+.main-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex-shrink: 0;
   gap: 35px;
   width: 1200px;
-  display: flex;
-  overflow: hidden;
-  align-self: center;
-  align-items: center;
-  flex-shrink: 0;
-  padding-top: 50px;
-  padding-left: 50px;
+  height: auto;
+  padding: 50px;
   border-radius: 70px;
-  padding-right: 50px;
-  flex-direction: column;
-  padding-bottom: 50px;
-  justify-content: center;
   background-color: rgba(230, 230, 230, 1);
+  overflow: hidden;
 }
-.trang-ket-thuc-content {
-  gap: 10px;
+
+.main-frame-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: column;
+  gap: 50px;
 }
-.trang-ket-thuc-content-bubble {
-  gap: -24px;
+
+
+.notif-frame {
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
-  justify-content: flex-end;
-}
-.trang-ket-thuc-question-frame {
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
   gap: 10px;
   width: 1094px;
-  display: flex;
   padding: 20px 30px 40px;
-  overflow: hidden;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  align-items: flex-start;
-  flex-shrink: 0;
   border-radius: 20px;
-  flex-direction: column;
-  justify-content: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
 }
-.trang-ket-thuc-text {
+
+.text {
+  font-family: "Reddit Sans";
+  font-size: 36px;
+  font-weight: 600;
+  font-style: SemiBold;
+  line-height: 150%;
+  text-align: center;
   color: rgba(0, 0, 0, 1);
   width: 1035px;
   height: auto;
+  text-decoration: none;
+}
+
+
+.next-button-content {
+  font-family: "Reddit Sans";
   font-size: 36px;
-  font-style: SemiBold;
-  text-align: center;
-  font-family: Reddit Sans;
-  font-weight: 600;
   line-height: 150%;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.trang-ket-thuc-next-page {
-  display: flex;
-  padding: 20px 0 0;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.trang-ket-thuc-next-button {
-  width: 339px;
-  height: 74px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-shrink: 1;
-  justify-content: center;
-}
-.trang-ket-thuc-button-frame {
-  gap: -24px;
-  top: 0px;
-  left: 0px;
-  width: 339px;
-  display: flex;
-  position: absolute;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.trang-ket-thuc-navlink {
-  display: contents;
-}
-.trang-ket-thuc-question-frame1 {
-  gap: 10px;
-  width: 335px;
-  display: flex;
-  padding: 10px 30px;
-  overflow: hidden;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  align-items: center;
-  padding-left: 10px 30px;
-  border-radius: 20px;
-  flex-direction: column;
-  justify-content: center;
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 1);
-}
-.trang-ket-thuc-text08 {
   color: rgba(0, 0, 0, 1);
-  height: auto;
-  font-size: 36px;
-  font-style: Regular;
-  text-align: center;
-  font-family: Reddit Sans;
-  font-weight: 400;
-  line-height: 150%;
-  font-stretch: normal;
   text-decoration: none;
+  position: absolute;
+  top: 8px;
+  left: 47.5px;
+  height: auto;
+}
+
+.next-button {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 1;
+  width: 340px;
+  height: 70px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 4px 0px #d4d4d4;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #ccffcc;
+  box-shadow: 0px 0px 0px 0px #d4d4d4;
 }

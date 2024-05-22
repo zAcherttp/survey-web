@@ -1,167 +1,135 @@
-.trang-loi-khuyen1-container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
+html {
+  line-height: 1.15;
+  scroll-behavior: smooth;
 }
-.trang-loi-khuyen1-trang-li-khuyn {
+
+body {
+  margin: 0;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  transition: 0.3s;
+}
+
+.trang-loi-khuyen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
   gap: 45px;
   width: 100%;
   height: auto;
-  display: flex;
   padding: 135px 202px;
   overflow: hidden;
-  align-items: center;
-  flex-shrink: 0;
-  flex-direction: column;
-  background-color: rgba(3, 4, 94, 1);
 }
-.trang-loi-khuyen1-main-frame {
+
+.main-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex-shrink: 0;
   gap: 35px;
   width: 1200px;
-  display: flex;
+  height: auto;
   padding: 50px;
-  overflow: hidden;
-  align-items: center;
-  flex-shrink: 0;
   border-radius: 70px;
-  flex-direction: column;
-  justify-content: center;
   background-color: rgba(230, 230, 230, 1);
-}
-.trang-loi-khuyen1-question {
-  gap: 10px;
-  display: flex;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  align-items: center;
-  flex-direction: column;
-}
-.trang-loi-khuyen1-question-bubble {
-  gap: -24px;
-  display: flex;
   overflow: hidden;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: flex-end;
 }
-.trang-loi-khuyen1-question-frame {
+
+.title-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   gap: 10px;
   width: 1094px;
-  display: flex;
   padding: 20px 30px;
-  overflow: hidden;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  align-items: center;
-  flex-shrink: 0;
   border-radius: 20px;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
-.trang-loi-khuyen1-navlink {
-  display: contents;
-}
-.trang-loi-khuyen1-arrow-frame {
-  width: 36px;
-  height: 36px;
-  text-decoration: none;
-}
-.trang-loi-khuyen1-text-frame {
-  gap: 10px;
-  width: 948px;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-}
-.trang-loi-khuyen1-text {
+
+.title-text {
   color: rgba(0, 0, 0, 1);
-  height: auto;
   font-size: 36px;
-  font-style: SemiBold;
-  text-align: center;
   font-family: Reddit Sans;
   font-weight: 600;
+  font-style: SemiBold;
+  text-align: center;
   line-height: 150%;
-  font-stretch: normal;
   text-decoration: none;
 }
-.trang-loi-khuyen1-navlink1 {
-  display: contents;
-}
-.trang-loi-khuyen1-arrow-frame1 {
-  width: 36px;
-  height: 36px;
-  text-decoration: none;
-}
-.trang-loi-khuyen1-question1 {
-  gap: 10px;
+
+.title-frame {
   display: flex;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  flex-direction: column;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 10px;
+  width: 948px;
 }
-.trang-loi-khuyen1-question-bubble1 {
-  gap: -24px;
+
+.arrow-button {
+  margin: 10px -10px 0 -10px;
+  width: 40px;
+  height: 50px;
+}
+
+.content-frame {
   display: flex;
-  overflow: hidden;
-  align-items: flex-end;
   flex-direction: column;
-  justify-content: flex-end;
-}
-.trang-loi-khuyen1-question-frame1 {
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
   gap: 10px;
   width: 1094px;
-  display: flex;
   padding: 20px 30px 40px;
-  overflow: hidden;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
-  align-items: flex-start;
-  flex-shrink: 0;
   border-radius: 20px;
-  flex-direction: column;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
-.trang-loi-khuyen1-text02 {
+
+.content-title,
+.content-text {
   color: rgba(0, 0, 0, 1);
   width: 1035px;
-  height: auto;
   font-size: 36px;
-  font-style: Medium;
-  text-align: left;
   font-family: Reddit Sans;
   font-weight: 500;
+  font-style: Medium;
+  text-align: left;
   line-height: 150%;
-  font-stretch: normal;
   text-decoration: none;
 }
-.trang-loi-khuyen1-text03 {
-  font-weight: 500;
-}
-.trang-loi-khuyen1-text05 {
-  font-weight: 500;
-}
-.trang-loi-khuyen1-text06 {
-  font-weight: 400;
-}
-.trang-loi-khuyen1-text08 {
-  font-weight: 400;
-}
-.trang-loi-khuyen1-text10 {
-  font-weight: 400;
-}
-.trang-loi-khuyen1-text12 {
-  font-weight: 400;
-}
-.trang-loi-khuyen1-text13 {
-  font-weight: 500;
-}
-.trang-loi-khuyen1-text14 {
-  font-weight: 400;
-}
-.trang-loi-khuyen1-text16 {
-  font-weight: 200;
+
+.content-title {
+  font-weight: 600;
 }
