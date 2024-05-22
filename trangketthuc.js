@@ -23,8 +23,9 @@ function updateContent() {
       <span class="text unselectable">
         Cảm ơn bạn đã dành thời gian quý báu để hoàn thành bài đánh giá
         tâm lý !<br />
-        Chúng mình hy vọng rằng những thông tin và lời khuyên mà bạn nhận
-        được sẽ hữu ích và giúp bạn hiểu rõ hơn về bản thân mình.<br />
+        Kết quả cho thấy bạn đang có một tinh thần khá ổn định. Tuy nhiên,
+        đừng quên dành thời gian nghỉ ngơi và thư giãn để sức khoẻ tâm lý 
+        của bạn luôn tốt nhé !<br />
         Nếu bạn có bất kỳ câu hỏi hoặc cần hỗ trợ thêm, xin đừng ngần ngại
         liên hệ với chúng mình. Chúng mình luôn sẵn lòng lắng nghe và giúp
         đỡ bạn.<br />
@@ -47,8 +48,9 @@ function updateContent() {
       <span class="text unselectable">
         Cảm ơn bạn đã dành thời gian quý báu để hoàn thành bài đánh giá
         tâm lý !<br />
-        Chúng mình hy vọng rằng những thông tin và lời khuyên mà bạn nhận
-        được sẽ hữu ích và giúp bạn hiểu rõ hơn về bản thân mình.<br />
+        Kết quả đánh giá cho thấy sức khỏe tinh thần của bạn cần được quan 
+        tâm thêm. Chúng mình đã chuẩn bị một số thông tin và lời khuyên có 
+        thể giúp bạn cảm thấy tốt hơn !<br />
         Nếu bạn có bất kỳ câu hỏi hoặc cần hỗ trợ thêm, xin đừng ngần ngại
         liên hệ với chúng mình. Chúng mình luôn sẵn lòng lắng nghe và giúp
         đỡ bạn.<br />

@@ -230,7 +230,18 @@ if (!hasValidPoints(points)) {
   window.location.href = "index.html";
 }
 
-let currentIndex = 0;
+let currentIndex = points.findIndex(point => point >= 70);
+updateContent(currentIndex);
+
+document.getElementById("arw-left").addEventListener("click", () => {
+  currentIndex = getPreviousIndex(currentIndex);
+  updateContent(currentIndex);
+});
+
+document.getElementById("arw-right").addEventListener("click", () => {
+  currentIndex = getNextIndex(currentIndex);
+  updateContent(currentIndex);
+});
 
 function updateContent(index) {
   console.log("Index:", currentIndex);
@@ -255,15 +266,3 @@ function getPreviousIndex(currentIndex) {
   } while (points[newIndex] < 70);
   return newIndex;
 }
-
-updateContent(currentIndex);
-
-document.getElementById("arw-left").addEventListener("click", () => {
-  currentIndex = getPreviousIndex(currentIndex);
-  updateContent(currentIndex);
-});
-
-document.getElementById("arw-right").addEventListener("click", () => {
-  currentIndex = getNextIndex(currentIndex);
-  updateContent(currentIndex);
-});
