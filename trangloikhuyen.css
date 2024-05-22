@@ -1,0 +1,167 @@
+.trang-loi-khuyen1-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.trang-loi-khuyen1-trang-li-khuyn {
+  gap: 45px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 135px 202px;
+  overflow: hidden;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  background-color: rgba(3, 4, 94, 1);
+}
+.trang-loi-khuyen1-main-frame {
+  gap: 35px;
+  width: 1200px;
+  display: flex;
+  padding: 50px;
+  overflow: hidden;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 70px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(230, 230, 230, 1);
+}
+.trang-loi-khuyen1-question {
+  gap: 10px;
+  display: flex;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: center;
+  flex-direction: column;
+}
+.trang-loi-khuyen1-question-bubble {
+  gap: -24px;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.trang-loi-khuyen1-question-frame {
+  gap: 10px;
+  width: 1094px;
+  display: flex;
+  padding: 20px 30px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.trang-loi-khuyen1-navlink {
+  display: contents;
+}
+.trang-loi-khuyen1-arrow-frame {
+  width: 36px;
+  height: 36px;
+  text-decoration: none;
+}
+.trang-loi-khuyen1-text-frame {
+  gap: 10px;
+  width: 948px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.trang-loi-khuyen1-text {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 36px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Reddit Sans;
+  font-weight: 600;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.trang-loi-khuyen1-navlink1 {
+  display: contents;
+}
+.trang-loi-khuyen1-arrow-frame1 {
+  width: 36px;
+  height: 36px;
+  text-decoration: none;
+}
+.trang-loi-khuyen1-question1 {
+  gap: 10px;
+  display: flex;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: center;
+  flex-direction: column;
+}
+.trang-loi-khuyen1-question-bubble1 {
+  gap: -24px;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.trang-loi-khuyen1-question-frame1 {
+  gap: 10px;
+  width: 1094px;
+  display: flex;
+  padding: 20px 30px 40px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.trang-loi-khuyen1-text02 {
+  color: rgba(0, 0, 0, 1);
+  width: 1035px;
+  height: auto;
+  font-size: 36px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Reddit Sans;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.trang-loi-khuyen1-text03 {
+  font-weight: 500;
+}
+.trang-loi-khuyen1-text05 {
+  font-weight: 500;
+}
+.trang-loi-khuyen1-text06 {
+  font-weight: 400;
+}
+.trang-loi-khuyen1-text08 {
+  font-weight: 400;
+}
+.trang-loi-khuyen1-text10 {
+  font-weight: 400;
+}
+.trang-loi-khuyen1-text12 {
+  font-weight: 400;
+}
+.trang-loi-khuyen1-text13 {
+  font-weight: 500;
+}
+.trang-loi-khuyen1-text14 {
+  font-weight: 400;
+}
+.trang-loi-khuyen1-text16 {
+  font-weight: 200;
+}

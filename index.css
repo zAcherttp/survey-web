@@ -1,0 +1,181 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
+*.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.trang-chu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px 30px;
+  position: relative;
+}
+
+.frame-nhom1 {
+  flex: 1;
+  position: relative;
+  transition: 0.2s;
+}
+
+.vector-letter-1,
+.vector-letter-m,
+.vector-letter-ó,
+.vector-letter-h,
+.vector-letter-n {
+  position: absolute;
+  box-sizing: content-box;
+}
+
+.vector-letter-1 {
+  top: 4px;
+  left: 130px;
+  width: 13px;
+  height: 35px;
+}
+
+.vector-letter-m {
+  top: 13px;
+  left: 80px;
+  width: 35px;
+  height: 25px;
+}
+
+.vector-letter-ó {
+  left: 51.5px;
+  width: 26px;
+  height: 39px;
+}
+
+.vector-letter-h {
+  top: 2px;
+  left: 26px;
+  width: 22px;
+  height: 36px;
+}
+
+.vector-letter-n {
+  top: 13px;
+  width: 22px;
+  height: 25px;
+}
+
+.trang-chu-main-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.trang-chu-text {
+  font-family: "Reddit Sans", sans-serif;
+  font-size: 10vmin;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+  color: #e6e6e6;
+  padding: 5vh 0 10vh;
+  width: 55vw;
+}
+
+.trang-chu-survey-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  width: 529px;
+  height: 89px;
+  transition: 0.1s;
+}
+
+.trang-chu-survey-button:hover {
+  transform: translateX(-2px) translateY(2px);
+}
+
+.trang-chu-button-base,
+.trang-chu-button-shade {
+  position: absolute;
+  width: 522px;
+  height: 80px;
+}
+
+.trang-chu-button-base {
+  top: 0;
+  left: 7px;
+  text-decoration: none;
+}
+
+.trang-chu-button-shade {
+  top: 9px;
+  left: 0;
+}
+
+.trang-chu-text-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: absolute;
+  top: -1px;
+  left: 115px;
+}
+
+.trang-chu-button-text {
+  font-family: "Reddit Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 150%;
+  color: #e6e6e6;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.trang-chu-info-button,
+.trang-chu-arrow-button {
+  position: absolute;
+  box-sizing: content-box;
+}
+
+.trang-chu-info-button {
+  top: 20px;
+  left: 24px;
+  width: 46px;
+  height: 46px;
+}
+
+.trang-chu-arrow-button {
+  top: 23px;
+  right: 21px;
+  width: 42px;
+  height: 42px;
+}
