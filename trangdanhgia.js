@@ -174,7 +174,7 @@ function handleAnswerClick(questionIndex, answer) {
   questionSets[setIndex].answers[questionIndex] = answer;
 }
 function redirectToEndingPage() {
-  const pointsString = points.join('-');
+  const pointsString = points.join("-");
   window.location.href = `trangketthuc.html?points=${pointsString}`;
 }
 function getAnsweredNum(questionSets) {

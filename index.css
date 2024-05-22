@@ -80,7 +80,7 @@ button {
   height: 25px;
 }
 
-.trang-chu-main-frame {
+.main-frame {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +94,7 @@ button {
   z-index: 1;
 }
 
-.trang-chu-text {
+.text {
   font-family: "Reddit Sans", sans-serif;
   font-size: 10vmin;
   font-weight: 400;
@@ -105,7 +105,11 @@ button {
   width: 55vw;
 }
 
-.trang-chu-survey-button {
+.button-container {
+  position: relative;
+}
+
+.survey-button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,29 +121,29 @@ button {
   transition: 0.1s;
 }
 
-.trang-chu-survey-button:hover {
-  transform: translateX(-2px) translateY(2px);
+.survey-button:hover {
+  transform: translateX(-4.5px) translateY(3.5px);
 }
 
-.trang-chu-button-base,
-.trang-chu-button-shade {
+.button-base,
+.button-shade {
   position: absolute;
   width: 522px;
   height: 80px;
 }
 
-.trang-chu-button-base {
+.button-base {
   top: 0;
   left: 7px;
   text-decoration: none;
 }
 
-.trang-chu-button-shade {
+.button-shade {
   top: 9px;
   left: 0;
 }
 
-.trang-chu-text-frame {
+.text-frame {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,7 +153,7 @@ button {
   left: 115px;
 }
 
-.trang-chu-button-text {
+.button-text {
   font-family: "Reddit Sans", sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -160,20 +164,20 @@ button {
   transition: 0.1s;
 }
 
-.trang-chu-info-button,
-.trang-chu-arrow-button {
+.info-button,
+.arrow-button {
   position: absolute;
   box-sizing: content-box;
 }
 
-.trang-chu-info-button {
+.info-button {
   top: 20px;
   left: 24px;
   width: 46px;
   height: 46px;
 }
 
-.trang-chu-arrow-button {
+.arrow-button {
   top: 23px;
   right: 21px;
   width: 42px;

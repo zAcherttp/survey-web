@@ -8,10 +8,64 @@ function getUrlParameter(string) {
 }
 
 const pointsString = getUrlParameter("points");
+const points = pointsString.split("-").map(Number);
 
-const nextPageButton = document.querySelector(".next-button");
+function hasValidPoints(points) {
+  return points.some((point) => point >= 70);
+}
 
-nextPageButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  window.location.href = `trangloikhuyen.html?points=${pointsString}`;
-});
+const pageContent = document.querySelector(".main-frame-content");
+
+function updateContent() {
+  if (!hasValidPoints(points)) {
+    pageContent.innerHTML = `
+    <div class="notif-frame">
+      <span class="text unselectable">
+        Cảm ơn bạn đã dành thời gian quý báu để hoàn thành bài đánh giá
+        tâm lý !<br />
+        Chúng mình hy vọng rằng những thông tin và lời khuyên mà bạn nhận
+        được sẽ hữu ích và giúp bạn hiểu rõ hơn về bản thân mình.<br />
+        Nếu bạn có bất kỳ câu hỏi hoặc cần hỗ trợ thêm, xin đừng ngần ngại
+        liên hệ với chúng mình. Chúng mình luôn sẵn lòng lắng nghe và giúp
+        đỡ bạn.<br />
+        Chúc bạn một ngày tốt lành và tràn đầy năng lượng tích cực!
+      </span>
+    </div>
+
+    <div>
+      <button class="button" id="return">
+        <span class="button-content">quay về trang chủ</span>
+      </button>
+    </div>`;
+    document.getElementById("return").addEventListener("click", (event) => {
+      event.preventDefault();
+      window.location.href = `index.html`;
+    });
+  } else {
+    pageContent.innerHTML = `
+    <div class="notif-frame">
+      <span class="text unselectable">
+        Cảm ơn bạn đã dành thời gian quý báu để hoàn thành bài đánh giá
+        tâm lý !<br />
+        Chúng mình hy vọng rằng những thông tin và lời khuyên mà bạn nhận
+        được sẽ hữu ích và giúp bạn hiểu rõ hơn về bản thân mình.<br />
+        Nếu bạn có bất kỳ câu hỏi hoặc cần hỗ trợ thêm, xin đừng ngần ngại
+        liên hệ với chúng mình. Chúng mình luôn sẵn lòng lắng nghe và giúp
+        đỡ bạn.<br />
+        Chúc bạn một ngày tốt lành và tràn đầy năng lượng tích cực!
+      </span>
+    </div>
+
+    <div>
+      <button class="button" id="next">
+        <span class="button-content">xem lời khuyên</span>
+      </button>
+    </div>`;
+    document.getElementById("next").addEventListener("click", (event) => {
+      event.preventDefault();
+      window.location.href = `trangloikhuyen.html?points=${pointsString}`;
+    });
+  }
+}
+
+updateContent();

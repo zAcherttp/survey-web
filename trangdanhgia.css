@@ -14,6 +14,7 @@ body {
   border-width: 0;
   border-style: solid;
   transition: 0.3s;
+  font-size: 32px;
 }
 
 *.unselectable {
@@ -52,13 +53,13 @@ body {
 }
 
 .title-bubble {
-  width: 60vmax;
+  width: 65vmax;
   gap: 10px;
   padding: 28px 10vw;
 }
 
 .title {
-  font-family: 'Reddit Sans';
+  font-family: "Reddit Sans";
   font-size: 48px;
   font-weight: 600;
   text-align: center;
@@ -66,15 +67,13 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
-
 .main-frame {
-  width: 60vmax;
+  width: 65vmax;
   gap: 35px;
   padding: 50px 50px 40px;
   background-color: rgba(230, 230, 230, 1);
   flex-direction: column;
 }
-
 
 .question-bubble {
   width: 100%;
@@ -98,8 +97,7 @@ body {
 .yes-button-content,
 .no-button-content,
 .next-button-content {
-  font-family: 'Reddit Sans';
-  font-size: 36px;
+  font-family: "Reddit Sans";
   line-height: 150%;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
