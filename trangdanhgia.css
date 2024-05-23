@@ -149,7 +149,7 @@ body {
 .no-button,
 .next-button,
 .end-button {
-  width: 185px;
+  width: auto;
   height: 70px;
   display: flex;
   position: relative;
