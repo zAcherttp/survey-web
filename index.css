@@ -183,3 +183,40 @@ button {
   width: 42px;
   height: 42px;
 }
+
+@media only screen and (max-width: 961px) {
+
+  .survey-button {
+    width: 400px;
+    height: 70px;
+  }
+  
+  .button-base,
+  .button-shade {
+    width: 390px;
+    height: 60px;
+  }
+  
+  .text-frame {
+    left: 90px;
+  }
+  
+  .button-text {
+    font-size: 28px;
+  }
+  
+
+  .info-button {
+    top: 15px;
+    left: 20px;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .arrow-button {
+    top: 18px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+  }
+}
