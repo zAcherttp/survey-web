@@ -34,6 +34,11 @@ button {
   font-size: 32px;
 }
 
+:root {
+  --inner-border-radius: 20px;
+  --ibr: var(--inner-border-radius);
+}
+
 .trang-loi-khuyen {
   display: flex;
   flex-direction: column;
@@ -92,7 +97,6 @@ button {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  gap: 10px;
   width: 70%;
 }
 
@@ -164,4 +168,29 @@ button {
 .button:hover {
   background-color: #ccffcc;
   box-shadow: 0px 0px 0px 0px #d4d4d4;
+}
+
+@media only screen and (max-width: 961px) {
+
+  * {
+    font-size: 24px;
+  }
+
+  .main-frame {
+    width: 90vmin;
+    padding: var(--ibr) var(--ibr) var(--ibr) var(--ibr);
+  }
+
+  .content-frame {
+    border-radius: calc(70px - var(--ibr));
+  }
+
+  .title-bubble {
+    width: 100%;
+    border-radius: calc(70px - var(--ibr));
+  }
+
+  .button {
+    height: 56px;
+  }
 }
