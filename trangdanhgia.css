@@ -149,7 +149,7 @@ body {
 .no-button,
 .next-button,
 .end-button {
-  width: auto;
+  width: 160px;
   height: 70px;
   display: flex;
   position: relative;
@@ -218,6 +218,7 @@ body {
   .end-button {
     width: 100px;
     height: 55px;
+    border-radius: calc(70px - var(--ibr));
   }
 
   .next-button {
